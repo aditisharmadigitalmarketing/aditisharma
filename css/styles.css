@@ -625,6 +625,95 @@ p a:not(.btn):not(.link-chip):hover{
   color: var(--amber);
 }
 
+/* ---------------- Point list (competencies / expertise) ---------------- */
+.point-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.point-item{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--grid-line);
+}
+
+.point-item:last-child{ border-bottom: none; }
+
+.point-item .arrow{
+  font-family: var(--font-mono);
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.point-item p{ margin: 0; }
+
+.point-item strong{ color: var(--ink); }
+
+/* Quote block */
+.quote-block{
+  background: var(--surface);
+  border: 1px solid var(--grid-line);
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.quote-block blockquote{
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  color: var(--ink);
+  margin: 0 0 14px;
+  line-height: 1.4;
+}
+
+.quote-block .source{
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---------------- Footer social logo badges ---------------- */
+.badge-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.badge-link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 64px;
+  transition: transform 0.2s ease;
+}
+
+.badge-link:hover{ transform: translateY(-3px); }
+
+.badge-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #0B0E14;
+}
+
+.badge-label{
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
 /* ---------------- Footer ---------------- */
 .site-footer{
   border-top: 1px solid var(--grid-line);
